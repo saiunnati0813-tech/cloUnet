@@ -5,6 +5,8 @@ import time
 import base64
 from backend import chatbot
 
+port = int(os.environ.get("PORT", 8000))
+app.run(host="0.0.0.0", port=port)
 
 def get_base64_image(image_path):
     with open(image_path, "rb") as f:
@@ -260,3 +262,4 @@ if user_input:
             time.sleep(0.015)
 
     save_chats()
+
