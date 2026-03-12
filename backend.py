@@ -4,7 +4,7 @@ from langgraph.graph import StateGraph, START, END
 
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
-    groq_api_key=cncc bot api key,  
+    groq_api_key=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,  
     temperature=0.2
 )
 
@@ -75,4 +75,5 @@ graph.add_edge("cncc_agent", END)
 
 
 chatbot = graph.compile()
+
 
